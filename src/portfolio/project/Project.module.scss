@@ -1,0 +1,58 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.project {
+  @include flex(column, flex-start, center, wrap);
+  background-color: $bgSecondColor;
+
+  .image {
+    @include flex(column, center, center, wrap);
+    min-height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $bgColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+    }
+
+    .viewBtn {
+      @include flex(column, center, center, wrap);
+      width: 200px;
+      height: 40px;
+      font-size: 20px;
+      text-decoration: none;
+      background-color: $bgSecondColor;
+      color: $primaryColor;
+      margin: 30px 0;
+      position: relative;
+      z-index: 1;
+
+      &:hover {
+        transform: scale(1.1);
+        color: $textColor;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .projectInfo {
+    padding: 25px 20px;
+    color: $textColor;
+
+    .projectTitle {
+      @include text($titleFontFamily, 16px, 1.2, 600);
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+    }
+  }
+}

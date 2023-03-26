@@ -1,0 +1,26 @@
+@import '../../../../empire_builders/src/common/styles/sass/variables';
+@import '../../../../empire_builders/src/common/styles/sass/mixins';
+
+.nav {
+  width: 340px;
+  @include flex(row, space-between, stretch, nowrap);
+
+  a {
+    @include text($titleFontFamily, 16px, 1.2, 400);
+    color: $textColor;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor
+    }
+  }
+
+  .active {
+    color: $primaryColor
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

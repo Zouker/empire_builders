@@ -1,0 +1,20 @@
+@import '../../../empire_builders/src/common/styles/sass/variables';
+@import '../../../empire_builders/src/common/styles/sass/mixins';
+
+.footerBlock {
+  text-align: center;
+  padding: 5px 0;
+  color: $textColor;
+
+  .container {
+    @include container();
+    @include flex(column, space-between, center, wrap);
+
+    .copyright {
+      @include text($textColor, 16px, 1.2, 300);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

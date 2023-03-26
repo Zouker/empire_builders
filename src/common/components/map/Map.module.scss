@@ -1,0 +1,10 @@
+.map {
+  border-radius: 5%;
+  height: 400px;
+  width: 400px;
+
+  @media screen and (max-width: 480px) {
+    height: 300px;
+    width: 300px;
+  }
+}

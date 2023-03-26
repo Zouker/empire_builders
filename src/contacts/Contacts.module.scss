@@ -1,0 +1,40 @@
+@import '../../../empire_builders/src/common/styles/sass/variables';
+@import '../../../empire_builders/src/common/styles/sass/mixins';
+
+.contacts {
+  padding: 100px 0;
+  min-height: 76.3vh;
+  @media screen and (max-width: 400px) {
+    padding: 60px 0;
+  }
+
+  .container {
+    @include container();
+    @include flex(column, center, center, wrap);
+
+    .contactsInfo {
+      color: $textColor;
+      @include flex(row, space-between, center, wrap);
+      width: 100%;
+      margin-top: 30px;
+
+      .instagram {
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 985px) {
+        @include flex(row, center, center, wrap);
+        align-content: space-between;
+      }
+    }
+  }
+
+
+  h3 a {
+    text-decoration: none;
+    color: $textColor;
+  }
+}
