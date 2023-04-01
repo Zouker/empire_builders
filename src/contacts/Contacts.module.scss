@@ -18,6 +18,11 @@
       width: 100%;
       margin-top: 30px;
 
+      @media screen and (max-width: 995px) {
+        @include flex(row, center, center, wrap);
+        align-content: center;
+      }
+
       .instagram {
         width: 25px;
         height: 25px;
@@ -25,7 +30,7 @@
         cursor: pointer;
       }
 
-      @media screen and (max-width: 985px) {
+      @media screen and (max-width: 995px) {
         @include flex(row, center, center, wrap);
         align-content: space-between;
       }
