@@ -1,0 +1,21 @@
+@import '../../../../../empire_builders/src/common/styles/sass/variables';
+@import '../../../../../empire_builders/src/common/styles/sass/mixins';
+
+.slider {
+  z-index: 1;
+
+  @media screen and (max-width: 990px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.album {
+  @include flex(column, center, center, nowrap);
+
+  img {
+    max-width: 90%;
+    margin: 1%
+  }
+}
