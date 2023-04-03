@@ -2,13 +2,14 @@
 @import '../../../empire_builders/src/common/styles/sass/mixins';
 
 .footerBlock {
+  height: 5vh;
   text-align: center;
-  padding: 5px 0;
   color: $textColor;
+  @include flex(column, center, center, wrap);
 
   .container {
     @include container();
-    @include flex(column, space-between, center, wrap);
+    //@include flex(column, center, center, wrap);
 
     .copyright {
       @include text($textColor, 16px, 1.2, 300);
