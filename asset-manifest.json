@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/empire_builders/static/css/main.c7c196b6.css",
-    "main.js": "/empire_builders/static/js/main.54d530cf.js",
+    "main.js": "/empire_builders/static/js/main.20f9f2fc.js",
     "static/js/787.27754952.chunk.js": "/empire_builders/static/js/787.27754952.chunk.js",
     "static/media/town_01.jpg": "/empire_builders/static/media/town_01.f8febdaa95626be385fc.jpg",
     "static/media/404.gif": "/empire_builders/static/media/404.078d6c526a81499bd7c4.gif",
@@ -11,11 +11,11 @@
     "static/media/instagram.svg": "/empire_builders/static/media/instagram.51874212bf1259d81c7eefc455a7da9a.svg",
     "index.html": "/empire_builders/index.html",
     "main.c7c196b6.css.map": "/empire_builders/static/css/main.c7c196b6.css.map",
-    "main.54d530cf.js.map": "/empire_builders/static/js/main.54d530cf.js.map",
+    "main.20f9f2fc.js.map": "/empire_builders/static/js/main.20f9f2fc.js.map",
     "787.27754952.chunk.js.map": "/empire_builders/static/js/787.27754952.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7c196b6.css",
-    "static/js/main.54d530cf.js"
+    "static/js/main.20f9f2fc.js"
   ]
 }
