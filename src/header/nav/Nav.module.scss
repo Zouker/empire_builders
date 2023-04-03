@@ -9,15 +9,21 @@
     @include text($titleFontFamily, 16px, 1.2, 400);
     color: $textColor;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
       text-decoration: none;
-      color: $primaryColor
+      color: $primaryColor;
     }
+
+    &:active {
+      color: $primaryColor;
+    }
+
   }
 
   .active {
-    color: $primaryColor
+    color: $primaryColor;
   }
 
   @media screen and (max-width: 600px) {

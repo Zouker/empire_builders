@@ -21,6 +21,7 @@
       @include text($titleFontFamily, 16px, 1.2, 400);
       color: $textColor;
       cursor: pointer;
+      text-decoration: none;
 
       &:hover {
         text-decoration: none;
