@@ -1,34 +1,31 @@
 import React, {useState} from 'react';
 import styles from './BurgerNav.module.scss'
 import {Turn as Hamburger} from 'hamburger-react'
-import {useNavigate} from "react-router-dom";
+import {Link} from "react-scroll";
 
 export const BurgerNav = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
 
-    const navigate = useNavigate();
-
     const [activeIndex, setActiveIndex] = useState(0)
 
     const links = ['Home', 'About', 'Portfolio', 'Contacts'];
-    const href = ['/', '/#about', '/#portfolio', '/#contacts']
+    const href = ['main', 'about', 'portfolio', 'contacts']
 
     const handleOnClick = (index: number) => {
         setActiveIndex(index);
-        navigate(href[index]);
         setMenuIsOpen(false);
     };
 
     const link = links.map((el, index) => {
         return (
-            <a
+            <Link
                 key={index}
-                href={href[index]}
+                to={href[index]}
                 onClick={() => handleOnClick(index)}
                 className={activeIndex === index ? styles.active : ''}
             >
                 {el}
-            </a>
+            </Link>
         );
     });
 

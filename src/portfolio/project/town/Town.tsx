@@ -7,8 +7,13 @@ import town_01 from './../../../assets/image/town/town_01.jpg'
 import town_02 from './../../../assets/image/town/town_02.jpg'
 import town_03 from './../../../assets/image/town/town_03.jpg'
 import styles from './Town.module.scss'
+import {useNavigate} from "react-router-dom";
 
 const Town = () => {
+    const navigate = useNavigate();
+    const goBack = () => {
+        navigate(-1);
+    }
 
     const [matches, setMatches] = useState(
         window.matchMedia("(min-width: 990px)").matches
@@ -21,7 +26,6 @@ const Town = () => {
     }, []);
 
     const AutoplaySlider = withAutoplay(AwesomeSlider);
-
 
     return (
         <div>
@@ -44,6 +48,7 @@ const Town = () => {
                     <img src={town_03} alt={'town_03'}/>
                 </div>
             )}
+            <button onClick={goBack}>Back</button>
         </div>
     );
 

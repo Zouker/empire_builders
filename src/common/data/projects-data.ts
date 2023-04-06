@@ -11,7 +11,7 @@ export const projectsData = [
         id: '2',
         title: 'Town',
         backgroundImage: `url(${main})`,
-        link: '/town',
+        link: '/portfolio/town',
     },
     {
         id: '3',

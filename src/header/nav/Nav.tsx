@@ -1,33 +1,27 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './Nav.module.scss'
-import {useNavigate} from "react-router-dom";
+import {Link} from 'react-scroll';
 
 export const Nav = () => {
 
-    const navigate = useNavigate();
-
-    const [activeIndex, setActiveIndex] = useState(0)
-
     const links = ['Home', 'About', 'Portfolio', 'Contacts'];
-    const href = ['/', '/#about', '/#portfolio', '/#contacts']
-
-    const handleOnClick = (index: number) => {
-        setActiveIndex(index);
-        navigate(href[index]);
-    };
+    const href = ['main', 'about', 'portfolio', 'contacts']
 
     const link = links.map((el, index) => {
         return (
-            <a
-                key={index}
-                href={href[index]}
-                onClick={() => handleOnClick(index)}
-                className={activeIndex === index ? styles.active : ''}
+            <Link
+                activeClass={styles.active}
+                to={href[index]}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
             >
                 {el}
-            </a>
+            </Link>
         );
     });
+
 
     return (
         <div className={styles.nav}>
