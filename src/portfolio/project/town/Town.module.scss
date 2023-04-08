@@ -2,7 +2,6 @@
 @import '../../../../../empire_builders/src/common/styles/sass/mixins';
 
 .slider {
-  z-index: 1;
 
   @media screen and (max-width: 990px) {
     display: flex;
@@ -14,8 +13,27 @@
 .album {
   @include flex(column, center, center, nowrap);
 
-  img {
-    max-width: 90%;
-    margin: 1%
+  .image {
+    height: 99%;
+    width: 100%;
+    object-fit: cover;
+    margin: 1%;
   }
 }
+
+//.aws-btn {
+//
+//  --slider-height-percentage: 50%;
+//  --slider-transition-duration: 575ms;
+//  --organic-arrow-thickness: 6px;
+//  --organic-arrow-border-radius: 5px;
+//  --organic-arrow-height: 51px;
+//  --organic-arrow-color: #ff9900;
+//  --control-button-width: 10%;
+//  --control-button-height: 25%;
+//  --control-button-background: transparent;
+//  --control-bullet-color: #ff9900;
+//  --control-bullet-active-color: #ffffff;
+//  --loader-bar-color: #ff9900;
+//  --loader-bar-height: 6px;
+//}

@@ -9,7 +9,6 @@
 
   .container {
     @include container();
-    //@include flex(column, center, center, wrap);
 
     .copyright {
       @include text($textColor, 16px, 1.2, 300);

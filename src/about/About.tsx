@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../about/About.module.scss";
+import styles from "./About.module.scss";
 import {Title} from "../common/components/title/Title";
 
 const About = () => {
