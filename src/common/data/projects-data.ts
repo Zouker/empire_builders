@@ -5,7 +5,7 @@ export const projectsData = [
         id: '1',
         title: 'Tom Nevers',
         backgroundImage: `url(${main})`,
-        link: 'https://google.com',
+        link: './portfolio/town',
     },
     {
         id: '2',
@@ -17,19 +17,22 @@ export const projectsData = [
         id: '3',
         title: 'Sconset',
         backgroundImage: `url(${main})`,
-        link: 'https://google.com',
+        link: './portfolio/town',
+
     },
     {
         id: '4',
         title: 'Something else',
         backgroundImage: `url(${main})`,
-        link: 'https://google.com',
+        link: './portfolio/town',
+
     },
     {
         id: '5',
         title: 'More...',
         backgroundImage: `url(${main})`,
-        link: 'https://google.com',
+        link: './portfolio/town',
+
     },
     {
         id: '6',
