@@ -3,6 +3,20 @@
 
 .slider {
 
+  --slider-height-percentage: 50%;
+  --slider-transition-duration: 575ms;
+  --organic-arrow-thickness: 6px;
+  --organic-arrow-border-radius: 5px;
+  --organic-arrow-height: 51px;
+  --organic-arrow-color: #ff9900;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #ffffff;
+  --control-bullet-active-color: #ff9900;
+  --loader-bar-color: #ff9900;
+  --loader-bar-height: 6px;
+
   @media screen and (max-width: 990px) {
     display: flex;
     justify-content: center;

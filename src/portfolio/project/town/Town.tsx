@@ -8,7 +8,7 @@ import town_03 from './../../../assets/image/town/town_03.jpg'
 import styles from './Town.module.scss'
 import BackButton from "../../../common/components/back-button/BackButton";
 // @ts-ignore
-import AwsSliderStyles from 'react-awesome-slider/src/core/styles.scss';
+import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
 
 const Town = () => {
 
@@ -28,7 +28,7 @@ const Town = () => {
         <div>
             {matches && (
                 <AutoplaySlider
-                    cssModule={AwsSliderStyles}
+                    cssModule={AwesomeSliderStyles}
                     className={styles.slider}
                     play
                     cancelOnInteraction={false}
