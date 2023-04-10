@@ -12,8 +12,10 @@ type ProjectPropsType = {
 const Project: React.FC<ProjectPropsType> = ({title, backgroundImage, link}) => {
     return (
         <div className={styles.project}>
-            <div className={styles.image} style={{backgroundImage}}>
-                <NavLink to={link} className={styles.viewBtn}>View the slideshow</NavLink>
+            <div className={styles.link} style={{backgroundImage}}>
+                <NavLink to={link} className={styles.viewBtn}>
+                    <span> View the slideshow</span>
+                </NavLink>
             </div>
             <div className={styles.projectInfo}>
                 <h3 className={styles.projectTitle}>{title}</h3>

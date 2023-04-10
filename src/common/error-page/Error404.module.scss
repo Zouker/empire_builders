@@ -6,12 +6,80 @@
   min-height: 95vh;
 
   .image {
-    width: 100%;
+    max-width: 80%;
   }
 
-  @media screen and (min-width: 800px) {
-    .image {
-      width: 80%;
+  .button {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 36px;
+    background-color: $primaryColor;
+    color: $textColor;
+    border-radius: 5px;
+    border-color: $primaryColor;
+    cursor: pointer;
+    margin: 0 2px;
+  }
+
+  .button::after {
+    display: block;
+    content: '';
+    position: absolute;
+
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 20%;
+
+    transform: skew(45deg);
+
+    background-color: $textColor;
+    opacity: 0.7;
+
+    z-index: 2;
+  }
+
+  .button:hover::after {
+    animation: blink 0.35s ease;
+    transform: skew(45deg);
+    color: $textColor;
+    font-weight: bold;
+  }
+
+  .button:hover::before {
+    display: block;
+    content: '';
+    position: absolute;
+
+    left: -100vw;
+    top: 0;
+    height: 100vh;
+    width: 300vw;
+
+    background-color: $textColor;
+    opacity: 0.2;
+
+    z-index: 1;
+  }
+
+  .button:focus {
+    outline: $textColor solid 1px;
+    border-color: $primaryColor;
+  }
+
+  .button:active {
+    background-color: $textColor;
+    color: $primaryColor;
+  }
+
+  @keyframes blink {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
     }
   }
+
 }

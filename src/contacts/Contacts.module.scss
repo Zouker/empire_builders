@@ -11,6 +11,11 @@
   .container {
     @include container();
     @include flex(column, center, center, wrap);
+    height: 70vh;
+
+    @media screen and (max-width: 995px) {
+      height: 100%;
+    }
 
     .contactsInfo {
       color: $textColor;
@@ -23,11 +28,12 @@
         align-content: center;
       }
 
-      .instagram {
+      .image {
         width: 25px;
         height: 25px;
         vertical-align: middle;
-        cursor: pointer;
+        horiz-align: center;
+        padding-right: 10px;
       }
 
       @media screen and (max-width: 995px) {
