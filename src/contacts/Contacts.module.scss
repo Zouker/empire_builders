@@ -10,7 +10,7 @@
 
   .container {
     @include container();
-    @include flex(column, center, center, wrap);
+    @include flex(column, space-between, center, wrap);
     height: 70vh;
 
     @media screen and (max-width: 995px) {
@@ -26,6 +26,10 @@
       @media screen and (max-width: 995px) {
         @include flex(row, center, center, wrap);
         align-content: center;
+      }
+
+      @media screen and (max-width: 540px) {
+        font-size: 12px;
       }
 
       .image {
