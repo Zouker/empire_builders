@@ -1,5 +1,5 @@
-@import '../../../../../empire_builders/src/common/styles/sass/variables';
-@import '../../../../../empire_builders/src/common/styles/sass/mixins';
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
 
 .title {
   margin: 0 0 30px;
@@ -10,7 +10,7 @@
 
   & h2 {
     margin: 0;
-    @include text($titleFontFamily, 36px, 1.2,300);
+    @include text($titleFontFamily, 36px, 1.2, 300);
   }
 
   &::before {
