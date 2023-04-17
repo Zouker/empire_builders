@@ -9,13 +9,13 @@ export const Nav = () => {
 
     const link = links.map((el, index) => {
         return (
-            <Link
-                activeClass={styles.active}
-                to={href[index]}
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
+            <Link key={index}
+                  activeClass={styles.active}
+                  to={href[index]}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
             >
                 {el}
             </Link>
