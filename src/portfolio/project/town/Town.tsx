@@ -25,7 +25,7 @@ const Town = () => {
     const AutoplaySlider = withAutoplay(AwesomeSlider);
 
     return (
-        <div>
+        <div className={styles.container}>
             {matches && (
                 <AutoplaySlider
                     cssModule={AwesomeSliderStyles}

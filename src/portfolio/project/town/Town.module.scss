@@ -1,53 +1,47 @@
 @import 'src/common/styles/sass/variables';
 @import 'src/common/styles/sass/mixins';
 
-.slider {
+.container {
+  background-color: $bgSecondColor !important;
 
-  --slider-height-percentage: 50%;
-  --slider-transition-duration: 575ms;
-  --organic-arrow-thickness: 6px;
-  --organic-arrow-border-radius: 5px;
-  --organic-arrow-height: 51px;
-  --organic-arrow-color: #ff9900;
-  --control-button-width: 10%;
-  --control-button-height: 25%;
-  --control-button-background: transparent;
-  --control-bullet-color: #ffffff;
-  --control-bullet-active-color: #ff9900;
-  --loader-bar-color: #ff9900;
-  --loader-bar-height: 6px;
-
-  @media screen and (max-width: 990px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.album {
   @include flex(column, center, center, nowrap);
 
-  .image {
-    height: 99%;
-    width: 100%;
-    object-fit: cover;
-    margin: 1%;
+  .slider {
+    bottom: 40px !important;
+    z-index: 1 !important;
+
+    --slider-height-percentage: 95vh !important;
+    --slider-transition-duration: 575ms !important;
+    --organic-arrow-thickness: 6px !important;
+    --organic-arrow-border-radius: 5px !important;
+    --organic-arrow-height: 51px !important;
+    --organic-arrow-color: #ff9900 !important;
+    --control-button-width: 10% !important;
+    --control-button-height: 25% !important;
+    --control-button-background: transparent !important;
+    --control-bullet-color: #ffffff !important;
+    --control-bullet-active-color: #ff9900 !important;
+    --loader-bar-color: #ff9900 !important;
+    --loader-bar-height: 6px !important;
+
+    @media screen and (max-width: 990px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
+
+  .album {
+    @include flex(column, center, center, nowrap);
+
+    .image {
+      height: 99%;
+      width: 100%;
+      object-fit: cover;
+      margin: 0 0 1% 0;
+    }
+  }
+
 }
 
-//.aws-btn {
-//
-//  --slider-height-percentage: 50%;
-//  --slider-transition-duration: 575ms;
-//  --organic-arrow-thickness: 6px;
-//  --organic-arrow-border-radius: 5px;
-//  --organic-arrow-height: 51px;
-//  --organic-arrow-color: #ff9900;
-//  --control-button-width: 10%;
-//  --control-button-height: 25%;
-//  --control-button-background: transparent;
-//  --control-bullet-color: #ff9900;
-//  --control-bullet-active-color: #ffffff;
-//  --loader-bar-color: #ff9900;
-//  --loader-bar-height: 6px;
-//}
+

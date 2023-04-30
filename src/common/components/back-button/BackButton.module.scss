@@ -10,7 +10,7 @@
     z-index: 100;
     border: solid 1px $primaryColor;
     border-radius: 10px;
-    box-shadow: 4px 4px $primaryColor;
+    box-shadow: 4px 4px rgba($primaryColor, 0.7);
     background-color: $textColor;
 
     @media screen and (max-width: 550px) {
