@@ -2,7 +2,6 @@
   "name": "empire_builders",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Zouker.github.io/empire_builders",
   "dependencies": {
     "@react-google-maps/api": "^2.18.1",
     "@testing-library/jest-dom": "^5.14.1",
