@@ -1,10 +1,15 @@
 .mainBlock {
   min-height: 120vh;
+  height: auto;
+  position: relative;
 
   .mainPhoto {
     background-image: url('../assets/image/main_photo.jpeg');
+    background-size: cover;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
     display: block;
     position: absolute;
     margin: auto;
