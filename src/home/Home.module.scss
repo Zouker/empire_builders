@@ -1,9 +1,5 @@
 .mainBlock {
-  min-height: 100vh;
-
-  @media screen and (min-width: 600px) {
-    min-height: 120vh;
-  }
+  min-height: 120vh;
 
   .mainPhoto {
     background-image: url('../assets/image/main_photo.jpeg');
@@ -19,6 +15,5 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
 }
 
