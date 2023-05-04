@@ -3,7 +3,7 @@
 
   .mainPhoto {
     background-image: url('../assets/image/main_photo.jpeg');
-    height: 100vh;
+    max-height: 100vh;
     width: 100%;
     object-fit: scale-down;
     display: block;
