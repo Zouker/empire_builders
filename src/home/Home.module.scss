@@ -4,11 +4,12 @@
 
   .mainPhoto {
     background-image: url('../assets/image/main_photo.jpeg');
+    background-size: cover;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     position: absolute;
     margin: auto;
