@@ -1,10 +1,12 @@
 .mainBlock {
   min-height: 100vh;
+  height: 1px;
 
   .mainPhoto {
     background-image: url('../assets/image/main_photo.jpeg');
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
     object-fit: cover;
     display: block;
     position: absolute;
