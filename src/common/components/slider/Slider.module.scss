@@ -2,7 +2,7 @@
 @import 'src/common/styles/sass/mixins';
 
 .container {
-  background-color: $bgSecondColor !important;
+  background-color: $bgColor !important;
 
   @include flex(column, center, center, nowrap);
 
@@ -33,6 +33,7 @@
 
   .album {
     @include flex(column, center, center, nowrap);
+    min-height: 100vh;
 
     .image {
       height: 100%;
