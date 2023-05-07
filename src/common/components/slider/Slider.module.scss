@@ -2,12 +2,16 @@
 @import 'src/common/styles/sass/mixins';
 
 .container {
-  background-color: $bgColor !important;
+  background-color: $bgSecondColor !important;
 
   @include flex(column, center, center, nowrap);
 
+  @media screen and (max-width: 990px) {
+    background-color: $bgColor !important;
+  }
+
   .slider {
-    bottom: 40px !important;
+    bottom: 50px !important;
     z-index: 1 !important;
 
     --slider-height-percentage: 95vh !important;
