@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/empire_builders/static/css/main.def7bba5.css",
-    "main.js": "/empire_builders/static/js/main.f2b807b0.js",
+    "main.css": "/empire_builders/static/css/main.5d8a8744.css",
+    "main.js": "/empire_builders/static/js/main.1c51e805.js",
     "static/js/787.27754952.chunk.js": "/empire_builders/static/js/787.27754952.chunk.js",
     "static/media/town_01.jpg": "/empire_builders/static/media/town_01.f8febdaa95626be385fc.jpg",
     "static/media/404.gif": "/empire_builders/static/media/404.078d6c526a81499bd7c4.gif",
@@ -14,12 +14,12 @@
     "static/media/back-arrow.svg": "/empire_builders/static/media/back-arrow.a8788b7de4dfae2830876036e04c83e6.svg",
     "index.html": "/empire_builders/index.html",
     "static/media/phone.svg": "/empire_builders/static/media/phone.ae90c6ee8f906da300d20d9bc4e1825d.svg",
-    "main.def7bba5.css.map": "/empire_builders/static/css/main.def7bba5.css.map",
-    "main.f2b807b0.js.map": "/empire_builders/static/js/main.f2b807b0.js.map",
+    "main.5d8a8744.css.map": "/empire_builders/static/css/main.5d8a8744.css.map",
+    "main.1c51e805.js.map": "/empire_builders/static/js/main.1c51e805.js.map",
     "787.27754952.chunk.js.map": "/empire_builders/static/js/787.27754952.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.def7bba5.css",
-    "static/js/main.f2b807b0.js"
+    "static/css/main.5d8a8744.css",
+    "static/js/main.1c51e805.js"
   ]
 }
