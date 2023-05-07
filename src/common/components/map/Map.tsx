@@ -16,6 +16,7 @@ const Map = () => {
         <LoadScript
             googleMapsApiKey={key}
             libraries={['places']}
+            language={'en'}
         >
             <GoogleMap
                 center={center}
