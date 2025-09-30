@@ -6,8 +6,8 @@ const BackButton = () => {
     const navigate = useNavigate();
 
     const goBack = () => {
-        navigate(-1);
-        navigate('/');
+        navigate(-1)
+        navigate('..', {replace: true});
     }
     return (
         <div className={styles.container}>
