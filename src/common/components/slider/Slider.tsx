@@ -33,7 +33,7 @@ const Slider: React.FC<SliderPropsType> = ({array}) => {
                     className={styles.slider}
                     play
                     cancelOnInteraction={false}
-                    interval={6000}
+                    interval={false}
                     infinite
                 >
                     {array.map(a => <div key={a.toString()} data-src={a}/>)}
