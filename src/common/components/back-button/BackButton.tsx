@@ -12,7 +12,8 @@ const BackButton = () => {
     return (
         <div className={styles.container}>
             <button onClick={goBack} className={styles.backButton}>
-              ← Back
+              <span className={styles.arrow}>←</span>
+              <span>Back</span>
             </button>
         </div>
     );
