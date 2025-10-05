@@ -3,7 +3,7 @@ import styles from './Error404.module.scss'
 import error404 from '../../assets/image/404.gif'
 import {useNavigate} from "react-router-dom";
 
-const Error404 = () => {
+export const Error404 = () => {
     const navigate = useNavigate()
     const onClickHandler = () => {
         navigate('/')
@@ -16,5 +16,3 @@ const Error404 = () => {
         </div>
     );
 };
-
-export default Error404;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.module.scss'
 
-const Home = () => {
+export const Home = () => {
     return (
         <div id={'main'} className={styles.mainBlock}>
             <div className={styles.mainPhoto}>
@@ -9,5 +9,3 @@ const Home = () => {
         </div>
     );
 };
-
-export default Home;

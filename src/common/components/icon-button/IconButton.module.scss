@@ -1,0 +1,50 @@
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  padding: 6px 12px;
+  user-select: none;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.light {
+  background: #f1f1f1;
+  color: #222;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+}
+
+.dark {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+.label {
+  font-size: 16px;
+}

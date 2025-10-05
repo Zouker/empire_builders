@@ -7,7 +7,7 @@ import email from '../assets/image/email.svg'
 import phone from '../assets/image/phone.svg'
 import office from '../assets/image/office.svg'
 
-const Contacts = () => {
+export const Contacts = () => {
     return (
         <div id={'contacts'} className={styles.contacts}>
             <div className={styles.container}>
@@ -38,5 +38,3 @@ const Contacts = () => {
         </div>
     );
 };
-
-export default Contacts;

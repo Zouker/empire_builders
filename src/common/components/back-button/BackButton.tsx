@@ -1,22 +1,15 @@
-import React from 'react';
-import {useNavigate} from "react-router-dom";
-import styles from './BackButton.module.scss'
+import React from "react";
+import styles from "./BackButton.module.scss";
 
-const BackButton = () => {
-    const navigate = useNavigate();
+interface BackButtonProps {
+  onClick: () => void;
+  label?: string;
+}
 
-    const goBack = () => {
-        navigate(-1)
-        navigate('..', {replace: true});
-    }
-    return (
-        <div className={styles.container}>
-            <button onClick={goBack} className={styles.backButton}>
-              <span className={styles.arrow}>←</span>
-              <span>Back</span>
-            </button>
-        </div>
-    );
+export const BackButton: React.FC<BackButtonProps> = ({ onClick, label = "Back" }) => {
+  return (
+    <button className={styles.backButton} onClick={onClick}>
+      ← {label}
+    </button>
+  );
 };
-
-export default BackButton;

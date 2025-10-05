@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./About.module.scss";
 import {Title} from "../common/components/title/Title";
 
-const About = () => {
+export const About = () => {
     return (
         <div id={'about'} className={styles.about}>
             <div className={styles.container}>
@@ -28,5 +28,3 @@ const About = () => {
         </div>
     );
 };
-
-export default About;

@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
-import Header from "./header/Header";
-import {Footer} from "./footer/Footer";
-import RoutesPage from "./routes/RoutesPage";
+import { Header } from "./header/Header";
+import { Footer } from "./footer/Footer";
+import { RoutesPage } from "./routes/RoutesPage";
 
 function App() {
     return (

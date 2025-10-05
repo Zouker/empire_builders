@@ -4,7 +4,7 @@ import {Nav} from "./nav/Nav";
 import {BurgerNav} from "./burgerNav/BurgerNav";
 import {useLocation} from "react-router-dom";
 
-const Header = () => {
+export const Header = () => {
 
     const location = useLocation();
 
@@ -21,5 +21,3 @@ const Header = () => {
         </div>
     );
 };
-
-export default Header;
