@@ -60,7 +60,9 @@
 .projectHeader {
   color: $textColor;
   font-size: 22px;
-  margin-bottom: 20px;
+  margin: 20px;
+  text-align: end;
+  padding-top: 20px;
 }
 
 .photoGrid {
