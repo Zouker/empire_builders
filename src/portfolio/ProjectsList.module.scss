@@ -1,0 +1,155 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.projectView {
+  position: relative;
+}
+
+.backButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  height: 40px;
+  width: auto;
+  padding: 0 16px;
+  line-height: 40px;
+
+  font-size: 16px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    $primaryColor,
+    mix($textColor, $primaryColor, 25%)
+  );
+  color: $textColor;
+  border: none;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: $textColor;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+  }
+
+  .arrow {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    top: -1.5px;
+  }
+}
+
+.projectHeader {
+  color: $textColor;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.photoThumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.lightboxOverlay {
+  position: fixed;
+  inset: 0;
+  background: $bgColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.lightboxImage {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 32px;
+  color: $textColor;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navButtonLeft,
+.navButtonRight {
+  position: absolute;
+  top: 50%;
+  font-size: 48px;
+  color: $textColor;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+.navButtonLeft {
+  left: 30px;
+}
+
+.navButtonRight {
+  right: 30px;
+}
+
+.photoCounter {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $textColor;
+  font-size: 18px;
+  font-weight: 500;
+  background: $primaryColor;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
