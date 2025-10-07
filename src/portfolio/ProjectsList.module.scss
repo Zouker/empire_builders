@@ -3,12 +3,15 @@
 
 .projectView {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
 }
 
 .backButton {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 7vh;
+  right: 2vh;
   z-index: 1000;
   height: 40px;
   width: auto;
@@ -29,7 +32,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   color: $textColor;
   font-size: 16px;
   font-weight: 600;
@@ -41,12 +43,16 @@
 
   &:hover {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-    transform: translateY(-2px);
+    transform: scale(1.1);
   }
 
   &:active {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transform: translateY(1px);
+  }
+
+  @media screen and (max-width: 600px) {
+    bottom: 2vh;
   }
 
   .arrow {
@@ -105,8 +111,8 @@
 }
 
 .lightboxImage {
-  max-width: 90%;
-  max-height: 80%;
+  max-width: 95%;
+  max-height: 85%;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
@@ -145,7 +151,7 @@
 
 .photoCounter {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   color: $textColor;

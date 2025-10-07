@@ -75,7 +75,25 @@ export const projects: Project[] = [
   },
    {
     id: 8,
-    title: "Centre Street",
+    title: "Gray ave",
+    photos: [
+      town_01,
+      town_02,
+      town_03
+    ],
+  },
+     {
+    id: 9,
+    title: "Surfside",
+    photos: [
+      town_01,
+      town_02,
+      town_03
+    ],
+  },
+     {
+    id: 10,
+    title: "Boynton Lane",
     photos: [
       town_01,
       town_02,

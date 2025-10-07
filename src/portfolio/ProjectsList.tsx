@@ -16,7 +16,7 @@ const slideVariants = {
 }
 
 export const ProjectsList: React.FC = () => {
-  const { projectId } = useParams<{ projectId: string }>()
+  const { projectTitle } = useParams<{ projectTitle: string }>()
   const navigate = useNavigate()
   const [currentProject, setCurrentProject] = useState<Project | null>(null)
   const [index, setIndex] = useState<number>(0)
@@ -24,10 +24,15 @@ export const ProjectsList: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   useEffect(() => {
-    const project = projects.find((p) => p.id.toString() === projectId)
+    const project = projects.find(
+      (p) =>
+        p.id.toString() === projectTitle ||
+        p.title.replace(/[^a-z0-9]/gi, '').toLowerCase() === projectTitle
+    )
     if (!project) navigate('/404')
     else setCurrentProject(project)
-  }, [projectId, navigate])
+    window.scrollTo(0, 0)
+  }, [projectTitle, navigate])
 
   const openLightbox = (i: number) => {
     setIndex(i)
